@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Beer Review</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-3">
+        <div class="page-header">
+          <h1>Beer Review</h1>
+        </div>
+
+        <section class="beers">
+          <ul class="beers-list">
+          </ul> 
+        </section>
+
+        <button class="btn btn-primary sort-beer" type="button">Sort beer by rate</button>
+
+        <form class="beer-form">
+          <h3>Add a New Beer</h3>
+
+          <div class="form-group">
+            <input type="text" class="beer-input form-control" placeholder="Beer Name">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="category-input form-control" placeholder="Category">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupFileAddon01">Rate it</span>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <button class="btn btn-primary post-beer" type="button">Post</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
