@@ -1,0 +1,55 @@
+<form>
+    Username:
+    <input id="username" type="text" placeholder="Your Name">
+    <br> Email:
+    <input type="e-mail" placeholder="yourname@email.com">
+    <br> Password:
+    <input id="password" type="password">
+    <br> Repeat password:
+    <input id="repeatpassword" type="password">
+    <br> Phone Number:
+    <input type="number">
+    <br> Country:
+    <input id="country" type="text">
+    <br>
+    <button type="button" onclick="submitForm();">Submit</button>
+</form>
+<div id="div1"></div>
+<script type="text/javascript">
+function submitForm() {
+    var errorMessage = "";
+    document.getElementById("div1").innerHTML = "";
+    document.getElementById('div1').style.color = "black";
+
+    var userElval = document.getElementById("username").value;
+    if (userElval.length < 5) {
+        errorMessage += "Username should have more than 5 characters\n";
+    }
+
+    var password = document.getElementById("password").value;
+    if (password.length < 6) {
+        errorMessage += "Password should have more than 6 characters\n";
+    }
+
+    var repeatpassword = document.getElementById("repeatpassword").value;
+    if (password != repeatpassword) {
+        errorMessage += "Passwords are not the same\n";
+    }
+
+    var country = document.getElementById("country").value;
+    console.log(country);
+    if (country != "Israel" && country != 'USA') {
+        errorMessage += "We only allow Israel and USA\n";
+    }
+
+    if (errorMessage != "") {
+        alert(errorMessage);
+        document.getElementById('div1').style.color = "red";
+        document.getElementById("div1").innerHTML = errorMessage;
+    }
+    else {
+        document.getElementById('div1').style.color = "green";
+        document.getElementById("div1").innerHTML = "thank you";
+    }
+}
+</script>

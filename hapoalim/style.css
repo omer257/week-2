@@ -1,0 +1,63 @@
+.container {
+  margin: 0 auto;
+  background-color: rgb(223, 49, 49);
+  border-radius: 5px;
+  height: 650px;
+  width: 480px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+}
+
+.top-text {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+
+}
+
+.inputform {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.lower-part {
+  background-color: rgb(163, 16, 16);
+  margin-top: 100px;
+  height: 290px;
+  border-radius:5px;
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+input:focus {
+  background-color: rgb(197, 194, 194);
+}
+
+.submit {
+  width: 200px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.open-account {
+  text-align: center;
+  height: 90px;
+  width: 400px;
+  font-size: 20px;
+  color: black;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.open-account img {
+  height:20px;
+  width: auto;
+}
